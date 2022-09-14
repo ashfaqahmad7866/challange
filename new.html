@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- <script src="jquery.js"></script> -->
+</head>
+
+
+
+<script>
+    $(function(){
+        $("#detach").on("click",function(){
+            $("#detach").detach();
+        });
+    });
+</script>
+<button id="detach">Detach selected elements</button>
+<div id="det" style="width:600px ; height:900; background-color:yellow; border: 5px solid black;">hello, i am going to detach</div>
+
+
+
+
+
+<script>
+    $(function(){
+        $("#empty").on("click",function(){
+            $("div").empty();
+        });
+    });
+</script>
+<button id="empty">make empty selected elements</button><br><br>
+<div style="width:600px ; height:900; background-color:yellow;">THis data will be removed when i will click on remove button, the div itself will not be deleted
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas repellendus dolor illo voluptatem quasi vero error officiis et impedit labore, molestias aliquid, nihil laboriosam? Magni sit obcaecati officia dolores ut, corporis error sed perferendis eaque sint ad incidunt sequi est commodi voluptates, ab veritatis, dolorum laudantium. Corporis recusandae eius, dolores similique pariatur, aperiam totam repudiandae ratione dicta delectus nam, debitis placeat. Fugiat doloribus, vel optio doloremque modi eos praesentium, quidem sed ipsam eveniet necessitatibus? Earum veritatis, excepturi sapiente at consectetur ullam fugit consequuntur eius qui unde voluptatibus assumenda doloribus necessitatibus vero libero sed itaque, perferendis culpa, iure facilis harum accusamus!
+</div><br><br>
+
+
+
+
+
+<script>
+    $(function(){
+        $("#remove").on("click",function(){
+            $("a").remove();
+        });
+    });
+</script>
+<button id="remove">Remove selected elements</button>
+
+
+<br><br>
+<a href="">i want to remove this anchor element</a>
+<small>this is small text</small>
+<button id="soo">clone it</button>
+<script>
+$(document).ready(function(){  
+    $("button").click(function(){  
+        $("small").clone().appendTo("p"); 
+    });  
+});  
+</script> 
+
+
+
+
+
+
+
+<script>  
+    $(document).ready(function(){  
+        $("button").click(function(){  
+            $("<span><b>Hello javatpoint.com</b></span>").appendTo("p");  
+        });  
+    });  
+    </script>  
+    </head>  
+    <body>  
+    <button>Add new content at the end of each p element</button>  
+    <p>I am a new reader.</p>  
+
+
+
+
+
+<script>
+    $(function(){
+     $("apnto").on("click",function(){
+         $("Manually generated apend to methos").appendTo("p");
+     })
+    }); 
+ </script>
+ <P id="append_to">This statement append to.</P>
+ <button id="apnto">Append to</button>
+ 
+
+
+
+
+
+<script>
+   $(function(){
+    $("aft").on("click",function(){
+        $("#append").insertAfter("#after");
+    })
+   }); 
+</script>
+<P id="after">This statement is inserted after.</P>
+<button id="aft">Insert after</button>
+
+<script>
+    $("#appen").on("click",function(){
+      $("#append").append("HEADING IS APPENDED");
+    });
+</script>
+<p id="append">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, necessitatibus?</p>
+<button id="appen">Prepend text</button>
+
+
+
+
+<script>
+    $("#prep").on("click",function(){
+      $("#prepend").prepend("Heading inserted as first parent of paragragh");
+    });
+</script>
+<p id="prepend">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nobis natus aliquam eligendi! Beatae repellendus voluptates voluptatibus, harum reiciendis maxime pariatur reprehenderit repellat quos maiores nesciunt, est, incidunt nam delectus?</p>
+<button id="prep">Prepend text</button>
+<script>
+    $(function(){
+        $("button").click(function(){
+   $("p").before("<h1>HEading of paragraph</h1>");
+    });
+    });
+</script>
+<body>
+    <p id="before">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae itaque voluptate quam praesentium minima mollitia ipsa quidem. Ducimus nemo optio, corrupti dolorum architecto error culpa numquam consequuntur maxime expedita asperiores?</p>
+<button class="bef">INSERT BEFORE</button>
+
+<div id="scrolltop" style="width: 300px; height: 300px; background-color: bisque; overflow: auto; margin: 70px;">
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae at animi expedita aspernatur tempore eius vel suscipit cumque cum iusto officia ea repellat nam id deserunt, quaerat reiciendis reprehenderit sit aliquid! Eum est sunt hic? Provident at tenetur iusto deserunt nisi alias! Sit quibusdam dolores eius placeat rerum error quod officiis aperiam fugit, dignissimos repellat laboriosam quos quam delectus cupiditate iusto, ad natus. Molestiae nemo officia deserunt harum nobis distinctio ut voluptatum aspernatur ducimus temporibus, illum beatae exercitationem ipsa placeat et, amet hic accusantium? Corporis cupiditate quas explicabo! Qui expedita consequatur quibusdam amet accusantium quae tempore placeat aut minus non molestiae dolorum reprehenderit error architecto nemo, repudiandae odit totam quaerat vitae, hic corporis pariatur eius, esse sed. Sapiente, dolorem quam possimus cupiditate, dignissimos officia delectus mollitia illum consequuntur harum molestiae asperiores voluptas. Necessitatibus accusantium cumque facere iusto officia sint repellendus, sed saepe perspiciatis cum, incidunt blanditiis quae magnam dolore laudantium neque perferendis exercitationem praesentium ea dolorum excepturi. Ab quos illo maxime eligendi nostrum quas aliquam. Ut exercitationem consectetur cupiditate quis autem officiis dolore, veniam repellendus animi sequi, asperiores harum voluptate? Autem laborum iste tempore cum tenetur ad adipisci dolor aspernatur eius, quaerat vero dolorum hic suscipit, perspiciatis repudiandae distinctio amet. Dicta rem culpa eos quidem non architecto harum sit officiis. Ab in eligendi cupiditate deleniti quis aperiam dicta voluptatum qui, sit placeat, laudantium sed reprehenderit nam error dolorem incidunt recusandae ratione dolorum quam, amet fugit consequuntur sunt. Nobis, voluptatem laboriosam rerum debitis molestiae exercitationem illo? Voluptatibus et aliquid sint fuga dignissimos consequuntur? Modi natus inventore ut mollitia ipsam voluptate nulla nihil quia iusto, fuga excepturi soluta dolore exercitationem suscipit sed quisquam, rerum autem vel? Cumque atque corporis, similique illo recusandae incidunt rerum aspernatur quos. Corporis quas ad obcaecati exercitationem. Voluptate adipisci voluptatum veritatis, reiciendis praesentium nulla possimus nisi ab quidem neque nihil obcaecati recusandae modi? Debitis ipsa fuga, aspernatur harum, obcaecati dolor quisquam dicta neque corporis expedita eaque illo alias itaque dolore ea aperiam nihil, consequuntur velit esse rerum sint ut? Eligendi suscipit nemo vel rerum in laborum minus corporis ab autem, pariatur harum maxime consequatur natus exercitationem sequi facilis, similique dolorem fugit porro accusantium? Illum quas reprehenderit necessitatibus, nesciunt obcaecati maxime dignissimos nostrum dolores fugit corrupti tempora sed repudiandae sapiente omnis excepturi incidunt quam impedit iusto, tempore dicta recusandae autem quae voluptas explicabo! Quaerat fuga quod optio tempora ad voluptatum velit modi deleniti magni! Fugiat beatae ex minus perferendis harum, sequi deleniti, nihil placeat molestiae nisi nemo dignissimos! Perspiciatis laboriosam corrupti repellat id in ex delectus facilis nihil! Animi obcaecati unde distinctio sed laborum excepturi deserunt repellat quo, fugit ea quod debitis magnam maiores itaque consectetur maxime ex amet quisquam rerum! Praesentium aliquid tenetur, labore nulla voluptatum ea natus cumque incidunt et delectus omnis laborum, tempore expedita eaque ipsum! Tempore cum reprehenderit excepturi quasi sint officia illo ducimus in vero molestias laborum veniam ad, facilis suscipit dolor tempora cupiditate fugiat necessitatibus minima, repudiandae velit hic. Nulla corporis architecto, fugit minus error, recusandae suscipit, labore eveniet impedit voluptates similique veniam!
+<button id="scroll" style="border:2px solid red ; border-radius: 10px; background-color: chartreuse; color: blue; bottom: 20px; left: 20px;  position: relative; position: sticky;">Scroll to top</button>
+</div>
+<script>
+    $(function(){
+     $("#scroll").click(function(){
+       $("#scrolltop").scrollTop(0);
+     });
+    });
+</script>
+</body>
+</html>
