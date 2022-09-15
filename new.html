@@ -152,5 +152,20 @@ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae at animi expedita
      });
     });
 </script>
+<img id="atribute"src="https://loremflickr.com/640/360" width=400px, height=400px alt="Image not found"/>
+<script>
+    $(function(){
+        $("#atribute").mouseenter(function(){
+            $("#atribute").attr({width:"600",height:"600"});
+        });
+        $("#atribute").mouseleave(function(){
+            $("#atribute").attr({width:"300",height:"300"});
+        });
+        $("#para").hover(function(){
+            $("#para").css("color","red");
+    })
+});
+</script>
+<p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, non?</p>
 </body>
 </html>
