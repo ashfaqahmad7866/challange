@@ -169,8 +169,14 @@ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae at animi expedita
 <p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, non?</p>
 <script>
 $(function(){
-$("#so").click(function(){
-$("#so").addClass("addcladd");
+$("#so").mouseenter(function(){
+$("#so").addClass("addclass");
+});
+$("#so").mouseleave(function(){
+$("#so").addClass("removeclass");
+});
+$("#ep").mouseenter(function(){
+$("#ep").addClass("addclass");
 });
 });
 </script>
@@ -178,10 +184,48 @@ $("#so").addClass("addcladd");
     .addclass{
         color: red;
         background-color: burlywood;
-        width: 100px;
-        height: 100px;
+        width: 700px;
+        height: 700px;
+    }
+    .removeclass{
+        background-color: aqua;
+        color: brown;
     }
 </style>
-<button id="so"> click here</button>
+<div id="ep">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis aliquam eum, magnam vero ex iusto ipsum in delectus accusantium vel. Similique commodi dolore autem sunt error ipsam beatae asperiores id, cum esse iste reprehenderit ipsum ipsa minus illum illo ea quo dicta natus? Sit quo quibusdam sunt odio laborum eveniet architecto, enim itaque. Cum minus facilis possimus facere unde sapiente quae, ut provident! Tempore mollitia distinctio quae a omnis ullam aperiam atque, explicabo, magni nam consequatur blanditiis fugit. Aut nobis tempore quaerat eum temporibus rerum optio voluptate magnam in cupiditate esse corporis, quidem porro quod placeat sed consectetur a impedit!</div>
+<p id="so"> click here</p>
+<br><br><br>
+<style>
+    .height{
+       background-color: aquamarine;
+        width: 60px;
+        height: 100px;
+        margin: 15px;
+        cursor: pointer;
+        float: left;
+    }
+</style>
+<script>
+    $(function(){
+$(".height").mouseenter(function(){
+$(".height").height(200).css({"background-color":"green"});
+});
+$(".height").mouseleave(function(){
+$(".height").height(100).css({"background-color":"aquamarine"});
+});
+$(".height").mouseenter(function(){
+$(".height").width(200).css({"background-color":"green"});
+});
+$(".height").mouseleave(function(){
+$(".height").width(60).css({"background-color":"aquamarine"});
+});
+    });
+</script>
+<div class="height"></div>
+<div class="height"></div>
+<div class="height"></div>
+<div class="height"></div>
+<div class="height"></div>
+<div class="height"></div>
 </body>
 </html>
