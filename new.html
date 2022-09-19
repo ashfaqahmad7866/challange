@@ -9,6 +9,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <!-- <script src="jquery.js"></script> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 
@@ -227,5 +228,80 @@ $(".height").width(60).css({"background-color":"aquamarine"});
 <div class="height"></div>
 <div class="height"></div>
 <div class="height"></div>
+<br><br><br><br>
+<script>
+    $(function(){
+$("#wrap").hover(function(){
+$(this).wrap("<div id='zzz'></div>");
+});
+    });
+</script><br><br><br>
+<style>
+    #zzz{
+        background-color: darkgray;
+    }
+</style>
+
+
+
+
+<script>
+    $(function(){
+$("#innerwrap").hover(function(){
+$(this).wrapInner("<a id='ooo'></a>");
+});
+    });
+</script>
+<script>
+    $(function()
+    {
+        $("#childr").click(function(){
+         $("#children").css({"border":"none","background-color":"yellow"});
+        });
+    });
+</script>
+<style>
+        #ooo{
+        background-color:gray;
+        /* text-decoration: none; */
+    }
+ 
+</style>
+<p id="innerwrap">Lorem ipsum dolor sit amet.</p>
+<br><br><br>
+<div id="children" style="border: 5px solid black;">
+<p style="border:2px solid red; background-color:blue"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, debitis.</p>
+<ul style="border: 3px dashed green; background-color: purple;"></ul>
+
+</div>
+<button id="childr">click to change</button>
+<br><br><br>
+<script>
+    $("rot").click(function(){
+$("#bring").data("name","hello everyone")
+    });
+</script>
+<div id="dataval" style="background-color: gray;">Lorem ipsum dolor sit amet.</div>
+<div id="bring"></div>
+<button id="rot">data</button><br><br><br>
+<ul>
+    <li>fisrt</li>
+    <li>second</li>
+    <li>third</li>
+    <li>fourth</li>
+    <li>fifth</li>
+</ul>
+<button id="each" style="background-color: yellow;"><i class="fa fa-arrow-down" style="font-size:20px;color:red;"></i></button>
+<script>
+    $(function(){
+   $("#each").click(function(){
+     $("li").each(function(){
+     var x=   $("li").text() ;
+     $("#eaching").text(x) ;
+     });
+   });
+    });
+</script>
+<div id="eaching" style="background-color:red ;"></div><br>
 </body>
 </html>
